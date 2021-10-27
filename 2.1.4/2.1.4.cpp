@@ -5,9 +5,21 @@
 
 using namespace std;
 
+int oddFunction(int num1, int num2) //Init function
+{
+    return (num1%2 == 1) || (num2%2 == 1); //Do the calculations
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    int firstnumber; int secondnumber; //Init variables
+    cout << "First number!\n"; //Get numbers
+    cin >> firstnumber;
+
+    cout << "Second number!\n";
+    cin >> secondnumber;
+
+    cout << oddFunction(firstnumber, secondnumber);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
